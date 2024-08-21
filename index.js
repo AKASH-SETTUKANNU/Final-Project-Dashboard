@@ -1,8 +1,13 @@
-function myFunction() {
-    var x = document.querySelector(".menuBar");
-    if (x.style.display === "none" || x.style.display === "") {
-        x.style.display = "flex";
-    } else {
-        x.style.display = "none";
-    }
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBarIcon = document.querySelector('.menu-bar-icon');
+    const menuBar = document.querySelector('.menu-bar');
+
+    menuBarIcon.addEventListener('click', function() {
+        if (menuBar.style.display === 'block') {
+            menuBar.style.display = 'none';
+        } else {
+            menuBar.style.display = 'block';
+        }
+    });
+
+});
