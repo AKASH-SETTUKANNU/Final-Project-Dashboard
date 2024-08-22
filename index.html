@@ -59,8 +59,9 @@
         </aside>
         <div class="order-info">
           <div class="customer-info">
-            <h2 style="font-weight: bolder;">Order</h2>
-            
+            <div>
+              <h2 style="font-weight: bolder">Order</h2>
+            </div>
             <div class="search-container">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input type="text" placeholder="Search in Knock N Door" />
@@ -68,18 +69,31 @@
             <div class="notification-symbol">
               <i class="fa-regular fa-bell"></i>
             </div>
-            <img src="./images/profile image.png" alt="profile" />
-            <i id="downAngle" class="fa-solid fa-angle-down"></i>
+            <div>
+              <img src="./images/profile image.png" alt="profile" />
+            </div>
+            <div>
+              <i id="downAngle" class="fa-solid fa-angle-down"></i>
+            </div>
           </div>
-          
+
           <a class="menu-bar-icon" onclick="myFunction()">
             <i class="fa-solid fa-bars"></i>
           </a>
-          <div class="pickup-time" >
-            <h3 style="font-weight: bolder;">Pickup 1 <br /><br />24 Orders - 9:05 am</h3>
-            <select name="products" id="products">
-              <option value="Cheese Stack">Pickups</option>
-            </select>
+          <div class="pickup-detials">
+            <div class="pickup-time">
+              <div>
+                <h3 style="font-weight: bolder">Pickup 1</h3>
+              </div>
+              <div>
+                <h3 style="font-weight: bolder">24 Orders - 9:05 am</h3>
+              </div>
+            </div>
+            <div class="pickup-select">
+              <select name="products" id="products">
+                <option value="Cheese Stack">Pickups</option>
+              </select>
+            </div>
           </div>
           <div class="last-order">
             <table>
@@ -89,14 +103,14 @@
                   <td>Jondan Smith</td>
                   <td>31 July 2020</td>
                   <td>$46.00</td>
-                  <td><div class="delivery-status" >completed</div></td>
+                  <td><div class="delivery-status">completed</div></td>
                   <td>
-                    <div class="last-order-icon">
+                    <div class="last-order-icon1">
                       <i class="fa-solid fa-gear"></i>
                     </div>
                   </td>
                   <td>
-                    <div class="last-order-icon" >
+                    <div class="last-order-icon">
                       <i class="fa-solid fa-angle-down"></i>
                     </div>
                   </td>
@@ -128,7 +142,7 @@
                     <td>Rowean Rice</td>
                     <td>31 July 2020</td>
                     <td>$62.00</td>
-                    <td ><div class="current-order-status">Pending</div></td>
+                    <td><div class="current-order-status">Pending</div></td>
                     <td>
                       <div class="current-order-info-icon1">
                         <i class="fa-solid fa-gear"></i>
@@ -194,7 +208,6 @@
                         <button id="order-accept-button">
                           Accept for Pickup
                         </button>
-                      
                       </div>
                     </td>
                   </tr>
@@ -210,9 +223,9 @@
                   <td>Jondan Smith</td>
                   <td>31 July 2020</td>
                   <td>$46.00</td>
-                  <td><div class="delivery-status">completed</div></td>
+                  <td><div class="next-order-delivery-status">Pending</div></td>
                   <td>
-                    <div class="next-order-icon">
+                    <div class="next-order-icon1">
                       <i class="fa-solid fa-gear"></i>
                     </div>
                   </td>
