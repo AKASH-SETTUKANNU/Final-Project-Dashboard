@@ -156,7 +156,6 @@ aside {
 
 .menu-bar-icon {
   display: none;
-  position: absolute;
   top: 1rem;
   left: 1rem;
   cursor: pointer;
@@ -381,7 +380,7 @@ aside {
   justify-content: center;
   width: 30%;
   height: 100%;
-  margin-left: 2em;
+  margin-left: 2.2em;
   padding: 7px;
   box-sizing: border-box;
 }
@@ -646,7 +645,7 @@ td {
     grid-template-rows: auto 1fr auto;
   }
 .menu-bar-icon{
-  display: block;
+  display: flex;
   grid-area: menu;
 }
   aside {
@@ -743,14 +742,6 @@ td {
     height: auto;
   }
 
-  .menu-bar-icon {
-    display: none;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    cursor: pointer;
-    z-index: 1000;
-  }
   .search-container i {
     left: 10px;
   }
@@ -760,7 +751,7 @@ td {
     align-items: flex-start;
   }
   .customer-info h2 {
-    margin-right: 10rem;
+    margin-right: 23rem;
   }
   #downAngle{
     margin-top:0.5em;
@@ -786,14 +777,15 @@ td {
 }
 
 @media screen and (max-width: 600px) {
-  .menu-bar {
-    display: none;
-  }
+ 
   .search-container input {
     padding-left: 40px;
     font-size: 14px;
   }
-
+  .menu-bar-icon{
+    display: flex;
+    grid-area: menu;
+  }
   .search-container i {
     left: 10px;
     padding: 6px;
@@ -818,6 +810,10 @@ td {
 @media screen and (max-width: 376px) {
   .notification-symbol {
     display: none;
+  }
+  .menu-bar-icon{
+    display: flex;
+    grid-area: menu;
   }
   .order-items table th:nth-child(1)
   {
@@ -857,7 +853,10 @@ td {
   .img {
     display: none;
   }
-
+  .menu-bar-icon{
+    display: flex;
+    grid-area: menu;
+  }
   .search-container input {
     padding-left: 30px;
   }
@@ -872,6 +871,19 @@ td {
     flex-shrink: 0;
   }
 }
+@media screen and (max-width:760px){
+.customer-info h2 {
+  margin-right:15rem;
+}
+}
+@media screen and (max-width:530px){
+  .customer-info h2 {
+    margin-right:3rem;
+  }
+  .customer-info img{
+    margin-top:0.3em;
+  }
+  }
 /* @media screen and (min-width:1700px){
   body {
     background-color: rgb(156, 237, 255);
