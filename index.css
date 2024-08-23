@@ -902,6 +902,12 @@ td {
     margin-right: 1700px; 
   }
 }
+@media screen and (min-width:2300px)
+{
+  .customer-info h2 {
+    margin-right: 1800px; 
+  }
+}
 /* @media screen and (min-width:1700px){
   body {
     background-color: rgb(156, 237, 255);
